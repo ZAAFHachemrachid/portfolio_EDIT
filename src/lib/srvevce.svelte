@@ -41,8 +41,8 @@
                 Services :
             </div>
 			<p class="max-w-xl opacity-60 mx-auto">
-				Every once in a while, you’ll see a Golbat that’s missing some fangs. This happens when
-				hunger drives it to try biting a Steel-type Pokémon.
+				What i am cabable of doing, I have worked on many projects and i have a
+				 good experience in backend development and low level programming and desktop apps.
 			</p>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:col-span-8">

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import image from '../lib/midpage.jpg'
+	import image from '../lib/op.jpg'
 	import Icon from '@iconify/svelte';
     import { fade } from "svelte/transition";
     import { quintOut } from 'svelte/easing';
