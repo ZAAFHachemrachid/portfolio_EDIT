@@ -27,8 +27,8 @@
 
 <style>
     .card img {
-        width: 100%;
-        height: 100%;
+        width: 340px;
+        height: 340px;
         object-fit: cover;
     }
 </style>

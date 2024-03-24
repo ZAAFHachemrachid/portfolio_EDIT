@@ -27,7 +27,7 @@
 	<!-- Facebook Button -->
 	<button class="btn text-white gap-2" style="background-color: #4267B2;"
 		><Icon icon="icon-park-outline:telegram" />Continue with Facebook
-        https://t.me/raraeded09</button
+        </button
 	>
 
 	<!-- Discord Button -->

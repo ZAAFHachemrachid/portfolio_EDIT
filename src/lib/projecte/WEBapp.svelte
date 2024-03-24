@@ -1,5 +1,5 @@
 <script lang="ts">
-    import image from '$lib/images/image.png'
+    import image from '$lib/images/image1.png'
 </script>
 
 <div class="card w-80 mx-auto">
@@ -23,8 +23,8 @@
 
 <style>
     .card img {
-        width: 100%;
-        height: 100%;
+        width: 340px;
+        height: 340px;
         object-fit: cover;
     }
 </style>
