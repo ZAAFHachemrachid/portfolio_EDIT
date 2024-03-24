@@ -4,6 +4,7 @@
 
    import type { AfterNavigate } from '@sveltejs/kit';
    import { afterNavigate } from '$app/navigation';
+   import { LightSwitch } from '@skeletonlabs/skeleton';
 
 afterNavigate((params: AfterNavigate) => {
     const isNewPage = params.from?.url.pathname !== params.to?.url.pathname;
@@ -43,6 +44,8 @@ afterNavigate((params: AfterNavigate) => {
 					Contact
 				</a>
 			</svelte:fragment>
+			<LightSwitch />
+
 		</AppBar>
 	</svelte:fragment>
 	

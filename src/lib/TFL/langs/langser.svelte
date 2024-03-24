@@ -9,10 +9,9 @@
     </p>
     <li>
         <span><Icon icon="cib:rust" class="variant-filled-tertiary rounded-token p-0.5" /></span>
-        <span>
+      
             <b>Rust</b> – Is my primary language, I have worked on many projects and i have a good experience 
             in backend development and low level programming and desktop apps.
-        </span>
     </li>
     <li>
         <span><Icon icon="akar-icons:python-fill" class="variant-filled-tertiary rounded-token p-0.5" /></span>
