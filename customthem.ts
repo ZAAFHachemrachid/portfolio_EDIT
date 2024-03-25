@@ -10,16 +10,16 @@ export const myCustomTheme: CustomThemeConfig = {
 		"--theme-font-color-base": "0 0 0",
 		"--theme-font-color-dark": "255 255 255",
 		"--theme-rounded-base": "16px",
-		"--theme-rounded-container": "16px",
+		"--theme-rounded-container": "12px",
 		"--theme-border-base": "6px",
 		// =~= Theme On-X Colors =~=
-		"--on-primary": "0 0 0",
-		"--on-secondary": "255 255 255",
+		"--on-primary": "255 255 255",
+		"--on-secondary": "0 0 0",
 		"--on-tertiary": "0 0 0",
 		"--on-success": "0 0 0",
 		"--on-warning": "0 0 0",
 		"--on-error": "255 255 255",
-		"--on-surface": "255 255 255",
+		"--on-surface": "0 0 0",
 		// =~= Theme Colors  =~=
 		// primary | #6F4518 
 		"--color-primary-50": "233 227 220", // #e9e3dc

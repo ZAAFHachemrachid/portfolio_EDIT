@@ -2,8 +2,8 @@
     import image from '$lib/images/image2.png'
 </script>
 
-<div class="card w-80 mx-auto">
-	<header class="card-header"></header>
+<div class="card w-80 mx-auto variant-ghost-secondary">
+	<header class="card-header "></header>
 
 	<img src={image} alt="API" class="" />
 	<div class="p-4 space-y-6">
@@ -27,7 +27,7 @@
 <style>
     .card img {
         width: 340px;
-        height: 340px;
+        height: 280px;
         object-fit: cover;
     }
 </style>

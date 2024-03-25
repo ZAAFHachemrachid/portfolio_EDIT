@@ -2,7 +2,7 @@
     import image from '$lib/images/image3.png'
 </script>
 
-<div class="card w-80 mx-auto">
+<div class="card w-80 mx-auto variant-ringed-secondary">
 	<header class="card-header"></header>
 
 	<img src={image} alt="API" class="" />
@@ -30,7 +30,7 @@
 <style>
     .card img {
         width: 340px;
-        height: 340px;
+        height: 280px;
         object-fit: cover;
     }
 </style>
