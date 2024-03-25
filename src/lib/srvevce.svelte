@@ -73,7 +73,7 @@
 				</div>
                 <div class="p-4 space-y-2">
 					<div class="variant-filled-tertiary text-2xl p-2 w-fit rounded-token">
-                        <Icon icon="codicon:terminal-linux" />					
+                        <Icon icon="codicon:terminal-linux"  class="variant-ghost-primary"/>					
                     </div>
 
 					<div class="font-semibold">

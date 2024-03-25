@@ -1,13 +1,12 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
 	import image from '../lib/op.jpg'
 	import Icon from '@iconify/svelte';
-    import { fade } from "svelte/transition";
-    import { quintOut } from 'svelte/easing';
-
-
+	let show = true;
 </script>
 
-<div class="container mx-auto max-w-screen-lg" transition:fade={{ duration: 500, delay: 500, easing: quintOut }}>
+<div in:fade={{ delay: 3000 }}>
+<div class="container mx-auto max-w-screen-lg" >
 	<div class="grid grid-cols-1 md:grid-cols-12">
 		<div class="space-y-4 md:col-span-6 p-4">
 			<h1 class="text-3xl md:text-5xl font-bold">
@@ -48,7 +47,7 @@
 		<img src={image} alt="design components" class="hidden md:block md:col-span-6" />
 	</div>
 </div>
-
+</div>
 <style>
 	.list-items li {
 		display: flex;
