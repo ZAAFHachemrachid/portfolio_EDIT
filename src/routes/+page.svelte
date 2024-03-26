@@ -5,6 +5,7 @@
 	import Contactme from '$lib/contactme.svelte';
 	import HolderTfl from '$lib/TFL/HolderTFL.svelte';
 	import HolderFram from '$lib/TFL/HolderFRAM.svelte';
+	import Headeing from '$lib/headeing.svelte';
 	import { fade } from 'svelte/transition';
 </script>
 

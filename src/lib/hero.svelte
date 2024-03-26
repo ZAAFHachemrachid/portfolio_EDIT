@@ -2,6 +2,7 @@
 	import { fade } from 'svelte/transition';
 	import image from '../lib/op.jpg';
 	import Icon from '@iconify/svelte';
+	import Headeing from './headeing.svelte';
 	let show = true;
 </script>
 
@@ -10,9 +11,7 @@
 		<div class="grid grid-cols-1 md:grid-cols-12">
 			<div class="space-y-4 md:col-span-6 p-4">
 				<h1 class="text-3xl md:text-5xl font-bold">
-					Hi I am <span class="relative px-1 md:px-3 py-1 bg-surface-300-600-token gradient-heading"
-						>Rachid</span
-					>
+					Hi I am <Headeing />
 				</h1>
 				<p class="max-w-xl opacity-60">
 					Welcome to my protfolio , I am a computer science student at the University of Science and
