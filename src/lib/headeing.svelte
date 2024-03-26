@@ -2,8 +2,12 @@
 	import { onMount } from 'svelte';
 	let text = 'Rachid';
 	let displayText = '';
+	let isDarkMode = false;
 
 	onMount(() => {
+		// Check if the document has the 'dark' class
+		isDarkMode = document.documentElement.classList.contains('dark');
+
 		let i = 0;
 		const type = () => {
 			if (i < text.length) {
@@ -29,6 +33,12 @@
 	});
 </script>
 
-<span class="relative px-1 md:px-3 py-1 bg-surface-300-600-token gradient-heading">
-	{displayText}
-</span>
+{#if isDarkMode}
+	<span class="relative px-1 md:px-3 py-1 bg-surface-300-600-token gradient-heading2">
+		{displayText}
+	</span>
+{:else}
+	<span class="relative px-1 md:px-3 py-1 bg-surface-300-600-token gradient-heading">
+		{displayText}
+	</span>
+{/if}

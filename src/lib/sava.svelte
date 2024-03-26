@@ -1,16 +1,53 @@
-		
-<section class="variant-filled-primary bg-mywebsite bg-cover bg-center bg-fixed w-full flex items-center">
-	<div class="container mx-auto flex items-center justify-self-start">
-		<div class="flex flex-col items-start">
-			<h2 class="text-4xl font-bold text-white">Hi I am Rachid</h2>
-			<h2 class="text-4xl font-bol text-orange-400">Computer sciense student</h2>
-			<h1 class="text-4xl font-bold text-white">Welcome to my protfolio</h1>
-			<a href="#projects" class="btn variant-outline-surface">View my work</a>
-			<div class="socials">
-				<a href="#"><i class="fa-brands fa-telegram"></i></a>
-				<a href="https://www.instagram.com/___.ireneee___?igsh=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
-			</div>
-		</div>
-	
-</section>
-   
+<script>
+	import { onMount } from 'svelte';
+	let text = 'Rachid';
+	let displayText = '';
+	let isDarkMode = false;
+
+	// Function to start the typing animation
+	const startTyping = () => {
+		let i = 0;
+		const type = () => {
+			if (i < text.length) {
+				displayText += text.charAt(i);
+				i++;
+				setTimeout(type, 500); // Adjust the speed of typing here
+			} else {
+				setTimeout(() => {}, 1000); // Wait time before reversing
+			}
+		};
+
+		const reverse = () => {
+			if (displayText.length > 0) {
+				displayText = displayText.slice(0, -1);
+				setTimeout(reverse, 200); // Adjust the speed of reversing here
+			} else {
+				// After reversing is complete, restart the typing animation
+				type(); // Wait time before typing again
+			}
+		};
+		// Start the typing animation
+		type();
+	};
+
+	onMount(() => {
+		// Check if the document has the 'dark' class
+		isDarkMode = document.documentElement.classList.contains('dark');
+		startTyping();
+	});
+
+	// Watch for changes in isDarkMode and restart the typing animation
+	$: if (isDarkMode) {
+		startTyping();
+	}
+</script>
+
+{#if isDarkMode}
+	<span class="relative px-1 md:px-3 py-1 bg-surface-300-600-token gradient-heading2">
+		{displayText}
+	</span>
+{:else}
+	<span class="relative px-1 md:px-3 py-1 bg-surface-300-600-token gradient-heading">
+		{displayText}
+	</span>
+{/if}

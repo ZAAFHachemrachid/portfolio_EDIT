@@ -35,7 +35,14 @@
 		<div class="flex flex-wrap">
 			{#each description as item}
 				<div class="w-[100px] flex-auto m-4">
-					<ProgressRadial value={item.value} class="place-items-center" labelledby={item.title}>
+					<ProgressRadial
+						value={item.value}
+						class="place-items-center  "
+						labelledby={item.title}
+						track=" stroke-secondary-400"
+						strokeLinecap="round"
+						meter=" stroke-primary-500"
+					>
 						{item.title}
 					</ProgressRadial>
 				</div>
