@@ -6,7 +6,7 @@
 </script>
 
 <section class=" bg-surface-300">
-<div class="container mx-auto max-w-screen-lg" >
+    <div class="container mx-auto max-w-screen-lg" >
 
 <div class=" bg-surface-600">
     <h1 class="h1 font-bold ">Projects</h1>

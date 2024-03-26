@@ -3,9 +3,9 @@
 </script>
 
 <div class="card w-80 mx-auto variant-ghost-secondary">
-	<header class="card-header "></header>
+	<header class="card-header "><img src={image} alt="API" class="" /></header>
 
-	<img src={image} alt="API" class="" />
+	
 	<div class="p-4 space-y-6">
 		<div class="flex justify-between items-center">
 			<b>Kernel</b>
