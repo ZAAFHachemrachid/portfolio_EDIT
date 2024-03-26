@@ -3,35 +3,35 @@
 	let value = 55;
 	let description = [
 		{
-			title: 'Rust',
+			title: 'Tauri',
 			value: 65
 		},
 		{
-			title: 'C',
-			value: 55
+			title: 'Svelte',
+			value: 37
 		},
 		{
-			title: 'HTML',
+			title: 'Iced',
 			value: 70
 		},
 		{
-			title: 'CSS',
-			value: 67
+			title: 'JavaFX',
+			value: 60
 		},
 		{
-			title: '   JS $ TS',
+			title: 'Leptos',
 			value: 45
 		},
 		{
-			title: 'SQL',
-			value: 70
+			title: 'Axum',
+			value: 80
 		}
 	];
 </script>
 
 <section class="bg-secondary-300">
-	<div class="container mx-auto max-w-screen-lg mt-4">
-		<h2 class="h2 font-bold gradient-heading">Language I Know</h2>
+	<div class="container mx-auto max-w-screen-lg mb-4">
+		<h2 class="h2 font-bold gradient-heading">Tools I Use</h2>
 		<div class="flex flex-wrap">
 			{#each description as item}
 				<div class="w-[100px] flex-auto m-4">
