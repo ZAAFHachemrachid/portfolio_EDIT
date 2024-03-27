@@ -4,7 +4,7 @@
 
 <div class=" ml-5 mr-5 mt-5 mb-5">
 	<div>
-		<h1 class="text-3xl md:text-5xl font-bold gradient-heading">Contact Me</h1>
+		<h1 class="text-3xl md:text-5xl font-bold gradient-heading" id="contact">Contact Me</h1>
 		<p class="max-w-xl opacity-60">
 			You can contact me by sending me an email or by following me on social media.
 		</p>

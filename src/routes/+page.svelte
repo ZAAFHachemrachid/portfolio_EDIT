@@ -7,6 +7,11 @@
 	import HolderFram from '$lib/TFL/HolderFRAM.svelte';
 	import Headeing from '$lib/headeing.svelte';
 	import { fade } from 'svelte/transition';
+
+	const theme = {
+		mode: 'light'
+		// Add other theme properties here
+	};
 </script>
 
 <section>

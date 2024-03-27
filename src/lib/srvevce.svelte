@@ -34,7 +34,7 @@
 <div class="container mx-auto max-w-screen-lg">
 	<div class="grid grid-cols-1 md:grid-cols-12">
 		<div class="space-y-4 md:col-span-4 p-4">
-			<div class="text-xl md:text-3xl font-bold gradient-heading">Services :</div>
+			<div class="text-xl md:text-3xl font-bold gradient-heading" id="Services">Services :</div>
 			<p class="max-w-xl opacity-60 mx-auto">
 				What i am cabable of doing, I have worked on many projects and i have a good experience in
 				backend development and low level programming and desktop apps.

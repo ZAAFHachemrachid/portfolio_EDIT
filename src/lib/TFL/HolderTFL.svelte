@@ -31,7 +31,7 @@
 
 <section class="bg-secondary-300">
 	<div class="container mx-auto max-w-screen-lg mt-4">
-		<h2 class="h2 font-bold gradient-heading">Language I Know</h2>
+		<h2 class="h2 font-bold gradient-heading" id="Language">Language I Know</h2>
 		<div class="flex flex-wrap">
 			{#each description as item}
 				<div class="w-[100px] flex-auto m-4">
