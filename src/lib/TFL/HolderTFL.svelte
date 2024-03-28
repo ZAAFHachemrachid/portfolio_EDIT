@@ -22,22 +22,22 @@
 		{
 			title: 'Rust',
 			value: 65,
-			link: ''
+			link: 'https://roadmap.sh/rust'
 		},
 		{
 			title: 'C',
 			value: 55,
-			link: ''
+			link: 'https://www.w3schools.com/c/index.php'
 		},
 		{
 			title: 'HTML',
 			value: 70,
-			link: ''
+			link: 'https://www.w3schools.com/html/'
 		},
 		{
 			title: 'CSS',
 			value: 67,
-			link: ''
+			link: 'https://www.w3schools.com/css/default.asp'
 		},
 		{
 			title: 'JS & TS',
@@ -46,10 +46,13 @@
 		{
 			title: 'SQL',
 			value: 70,
-			link: ''
+			link: 'https://roadmap.sh/sql'
 		}
 	];
 	function redirectToTypeScript() {
+		window.open('https://roadmap.sh/Typescript', '_blank');
+	}
+	function redirectToJavaScript() {
 		window.open('https://roadmap.sh/javascript', '_blank');
 	}
 </script>
@@ -78,9 +81,12 @@
 
 							<div class="card p-4 w-72 shadow-xl z-50" data-popup="popupFeatured">
 								<div>
-									<h3 class="h3">JavaScript & TypeScript</h3>
-									<button class="btn variant-outline-primary" on:click={redirectToTypeScript}>
-										More about {item.title}
+									<h3 class="h3 m-1">JavaScript & TypeScript</h3>
+									<button class="btn m-1 variant-outline-primary" on:click={redirectToTypeScript}>
+										Raod Map TypeScript
+									</button> <br />
+									<button class="btn m-1 variant-outline-primary" on:click={redirectToJavaScript}>
+										Raod Map JavaScript
 									</button>
 									<div class="arrow bg-surface-100-800-token" />
 								</div>
