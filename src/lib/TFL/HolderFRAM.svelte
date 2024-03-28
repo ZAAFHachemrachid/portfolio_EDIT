@@ -1,17 +1,28 @@
 <script lang="ts">
-	import { ProgressRadial } from '@skeletonlabs/skeleton';
+	import { ProgressRadial, popup } from '@skeletonlabs/skeleton';
+	import type { PopupSettings } from '@skeletonlabs/skeleton';
+	const popupFeatured: PopupSettings = {
+		// Represents the type of event that opens/closed the popup
+		event: 'click',
+		// Matches the data-popup value on your popup element
+		target: 'popupFeatured',
+		// Defines which side of your trigger the popup will appear
+		placement: 'bottom'
+	};
+
 	let value = 55;
 	let description = [
 		{
 			title: 'Tauri',
-			value: 65
+			value: 65,
+			link: 'https://tauri.studio/'
 		},
 		{
 			title: 'Svelte',
 			value: 37
 		},
 		{
-			title: 'Iced',
+			title: 'Iced & EGUI',
 			value: 70
 		},
 		{
@@ -27,6 +38,12 @@
 			value: 80
 		}
 	];
+	function redirectToTypeScript() {
+		window.open('https://roadmap.sh/Typescript', '_blank');
+	}
+	function redirectToJavaScript() {
+		window.open('https://roadmap.sh/javascript', '_blank');
+	}
 </script>
 
 <section class="bg-secondary-300">
@@ -34,18 +51,56 @@
 		<h2 class="h2 font-bold gradient-heading">Tools I Use</h2>
 		<div class="flex flex-wrap">
 			{#each description as item}
-				<div class="w-[100px] flex-auto m-4">
-					<ProgressRadial
-						value={item.value}
-						class="place-items-center  "
-						labelledby={item.title}
-						track=" stroke-secondary-400"
-						strokeLinecap="round"
-						meter=" stroke-primary-500"
-					>
-						{item.title}
-					</ProgressRadial>
-				</div>
+				{#if item.title === 'Iced & EGUI'}
+					<div class="w-[100px] flex-auto m-4 text">
+						<ProgressRadial
+							value={item.value}
+							class="place-items-center  "
+							labelledby={item.title}
+							track=" stroke-secondary-400"
+							strokeLinecap="round"
+							meter=" stroke-primary-500"
+						>
+							{item.value}
+						</ProgressRadial>
+						<div class=" ml-4 mt-5">
+							<button class="btn variant-outline-primary" use:popup={popupFeatured}
+								>{item.title}</button
+							>
+
+							<div class="card p-4 w-72 shadow-xl z-50" data-popup="popupFeatured">
+								<div>
+									<h3 class="h3 m-1">JavaScript & TypeScript</h3>
+									<button class="btn m-1 variant-outline-primary" on:click={redirectToTypeScript}>
+										Raod Map TypeScript
+									</button> <br />
+									<button class="btn m-1 variant-outline-primary" on:click={redirectToJavaScript}>
+										Raod Map JavaScript
+									</button>
+									<div class="arrow bg-surface-100-800-token" />
+								</div>
+							</div>
+						</div>
+					</div>
+				{:else}
+					<div class="w-[100px] flex-auto m-4 text">
+						<ProgressRadial
+							value={item.value}
+							class="place-items-center  "
+							labelledby={item.title}
+							track=" stroke-secondary-400"
+							strokeLinecap="round"
+							meter=" stroke-primary-500"
+						>
+							{item.value}
+						</ProgressRadial>
+						<div class=" ml-9 mt-4">
+							<a href={item.link} target="_blank" class="btn variant-outline-primary">
+								{item.title}
+							</a>
+						</div>
+					</div>
+				{/if}
 			{/each}
 		</div>
 	</div>
