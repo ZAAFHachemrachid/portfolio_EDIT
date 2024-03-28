@@ -1,15 +1,22 @@
 <script lang="ts">
 	import { ProgressRadial, popup } from '@skeletonlabs/skeleton';
 	import type { PopupSettings } from '@skeletonlabs/skeleton';
-	const popupFeatured: PopupSettings = {
+	const popupFeaturedGUI: PopupSettings = {
 		// Represents the type of event that opens/closed the popup
 		event: 'click',
 		// Matches the data-popup value on your popup element
-		target: 'popupFeatured',
+		target: 'popupFeaturedGUI',
 		// Defines which side of your trigger the popup will appear
 		placement: 'bottom'
 	};
-
+	const popupFeaturedAxum: PopupSettings = {
+		// Represents the type of event that opens/closed the popup
+		event: 'click',
+		// Matches the data-popup value on your popup element
+		target: 'popupFeaturedAxum',
+		// Defines which side of your trigger the popup will appear
+		placement: 'bottom'
+	};
 	let value = 55;
 	let description = [
 		{
@@ -51,7 +58,7 @@
 		<h2 class="h2 font-bold gradient-heading">Tools I Use</h2>
 		<div class="flex flex-wrap">
 			{#each description as item}
-				{#if item.title === 'Iced & EGUI'}
+				{#if item.title === 'Iced & EGUI' || item.title === 'Axum'}
 					<div class="w-[100px] flex-auto m-4 text">
 						<ProgressRadial
 							value={item.value}
@@ -63,24 +70,45 @@
 						>
 							{item.value}
 						</ProgressRadial>
-						<div class=" ml-4 mt-5">
-							<button class="btn variant-outline-primary" use:popup={popupFeatured}
-								>{item.title}</button
-							>
+						{#if item.title === 'Iced & EGUI'}
+							<div class=" ml-3 mt-5">
+								<button class="btn variant-outline-primary" use:popup={popupFeaturedGUI}
+									>{item.title}</button
+								>
 
-							<div class="card p-4 w-72 shadow-xl z-50" data-popup="popupFeatured">
-								<div>
-									<h3 class="h3 m-1">JavaScript & TypeScript</h3>
-									<button class="btn m-1 variant-outline-primary" on:click={redirectToTypeScript}>
-										Raod Map TypeScript
-									</button> <br />
-									<button class="btn m-1 variant-outline-primary" on:click={redirectToJavaScript}>
-										Raod Map JavaScript
-									</button>
-									<div class="arrow bg-surface-100-800-token" />
+								<div class="card p-4 w-72 shadow-xl z-50" data-popup="popupFeaturedGUI">
+									<div>
+										<h3 class="h3 m-1">Iced & Egui</h3>
+										<button class="btn m-1 variant-outline-primary" on:click={redirectToTypeScript}>
+											Raod Map TypeScript
+										</button> <br />
+										<button class="btn m-1 variant-outline-primary" on:click={redirectToJavaScript}>
+											Raod Map JavaScript
+										</button>
+										<div class="arrow bg-surface-100-800-token" />
+									</div>
 								</div>
 							</div>
-						</div>
+						{:else}
+							<div class=" ml-9 mt-5">
+								<button class="btn variant-outline-primary" use:popup={popupFeaturedAxum}
+									>{item.title}</button
+								>
+
+								<div class="card p-4 w-72 shadow-xl z-50" data-popup="popupFeaturedAxum">
+									<div>
+										<h3 class="h3 m-1">Axum</h3>
+										<button class="btn m-1 variant-outline-primary" on:click={redirectToTypeScript}>
+											Raod Map TypeScript
+										</button> <br />
+										<button class="btn m-1 variant-outline-primary" on:click={redirectToJavaScript}>
+											Raod Map JavaScript
+										</button>
+										<div class="arrow bg-surface-100-800-token" />
+									</div>
+								</div>
+							</div>
+						{/if}
 					</div>
 				{:else}
 					<div class="w-[100px] flex-auto m-4 text">
