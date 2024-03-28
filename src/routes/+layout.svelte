@@ -4,6 +4,12 @@
 
 	import type { AfterNavigate } from '@sveltejs/kit';
 	import { afterNavigate } from '$app/navigation';
+	import { initializeStores } from '@skeletonlabs/skeleton';
+	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
+
+	import { storePopup } from '@skeletonlabs/skeleton';
+	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
+	import { popup } from '@skeletonlabs/skeleton';
 
 	afterNavigate((params: AfterNavigate) => {
 		const isNewPage = params.from?.url.pathname !== params.to?.url.pathname;
@@ -14,6 +20,7 @@
 	});
 </script>
 
+<!-- <AppShell>...</AppShell> -->
 <!-- App Shell -->
 <AppShell scrollbarGutter="auto" regionPage="scroll-smooth">
 	<svelte:fragment slot="header">
