@@ -1,15 +1,22 @@
 <script lang="ts">
 	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
-
+	import {
+		AppShell,
+		AppBar,
+		Drawer,
+		popup,
+		initializeStores,
+		storePopup,
+		getDrawerStore
+	} from '@skeletonlabs/skeleton';
+	import type { DrawerSettings, DrawerStore } from '@skeletonlabs/skeleton';
 	import type { AfterNavigate } from '@sveltejs/kit';
 	import { afterNavigate } from '$app/navigation';
-	import { initializeStores } from '@skeletonlabs/skeleton';
 	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
 
-	import { storePopup } from '@skeletonlabs/skeleton';
+	import Navigation from '$lib/Navigation.svelte';
+	initializeStores();
 	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
-	import { popup } from '@skeletonlabs/skeleton';
 
 	afterNavigate((params: AfterNavigate) => {
 		const isNewPage = params.from?.url.pathname !== params.to?.url.pathname;
@@ -18,11 +25,27 @@
 			elemPage.scrollTop = 0;
 		}
 	});
+	const drawerStore = getDrawerStore();
+
+	function drawerOpen(): void {
+		drawerStore.open();
+	}
+	function trigger(position: 'left' | 'top' | 'right' | 'bottom'): void {
+		const s: DrawerSettings = { id: 'demo', position };
+		drawerStore.open(s);
+	}
 </script>
 
+<Drawer>
+	<Navigation />
+</Drawer>
 <!-- <AppShell>...</AppShell> -->
 <!-- App Shell -->
-<AppShell scrollbarGutter="auto" regionPage="scroll-smooth">
+<AppShell
+	scrollbarGutter="auto"
+	regionPage="scroll-smooth"
+	slotSidebarRight="w-0 md:w-52 bg-surface-500/10 "
+>
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<AppBar>
@@ -30,10 +53,16 @@
 				<strong class="text-xl uppercase">Rachid</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a class="btn btn-sm variant-ghost-surface" href="#Language"> Lang & Tool </a>
-				<a class="btn btn-sm variant-ghost-surface" href="#Services"> Services </a>
-				<a class="btn btn-sm variant-ghost-surface" href="#Projects"> Projects </a>
-				<a class="btn btn-sm variant-ghost-surface" href="#contact"> Contact </a>
+				<button class="md:hidden btn btn-sm mr-4" on:click={drawerOpen}>
+					<span>
+						<svg viewBox="0 0 100 80" class="fill-token w-4 h-4">
+							<rect width="100" height="20" />
+							<rect y="30" width="100" height="20" />
+							<rect y="60" width="100" height="20" />
+						</svg>
+					</span>
+				</button>
+				<Navigation />
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
