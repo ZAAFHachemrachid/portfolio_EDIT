@@ -30,8 +30,8 @@
 	function drawerOpen(): void {
 		drawerStore.open();
 	}
-	function trigger(position: 'left' | 'top' | 'right' | 'bottom'): void {
-		const s: DrawerSettings = { id: 'demo', position };
+	function trigger(): void {
+		const s: DrawerSettings = { position: 'right' };
 		drawerStore.open(s);
 	}
 </script>
@@ -53,7 +53,12 @@
 				<strong class="text-xl uppercase">Rachid</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<button class="md:hidden btn btn-sm mr-4" on:click={drawerOpen}>
+				<button
+					class=" btn btn-sm mr-4"
+					on:click={() => {
+						trigger();
+					}}
+				>
 					<span>
 						<svg viewBox="0 0 100 80" class="fill-token w-4 h-4">
 							<rect width="100" height="20" />
@@ -62,7 +67,6 @@
 						</svg>
 					</span>
 				</button>
-				<Navigation />
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
