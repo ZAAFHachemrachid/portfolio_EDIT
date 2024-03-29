@@ -17,8 +17,10 @@
 <section>
 	<Hero />
 </section>
-<HolderTfl />
-<HolderFram />
+<section>
+	<HolderTfl />
+	<HolderFram />
+</section>
 <Srvevce />
 <Holder />
 <Contactme />

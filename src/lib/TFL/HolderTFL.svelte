@@ -59,7 +59,21 @@
 
 <section class="bg-secondary-300">
 	<div class="container mx-auto max-w-screen-lg mt-4">
-		<h2 class="h2 font-bold gradient-heading" id="Language">Language I Know</h2>
+		<h2
+			class="h2 font-bold gradient-heading"
+			id="Language"
+			style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 10vh;"
+		>
+			Language And Tools I Know
+		</h2>
+		<div
+			class=" font-bold"
+			style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 10vh;"
+		>
+			<p><li>This is what i learn and how i rate myself</li></p>
+			<p></p>
+			<p><li>For more info Click button to show you road map</li></p>
+		</div>
 		<div class="flex flex-wrap">
 			{#each description as item}
 				{#if item.title === 'JS & TS'}
