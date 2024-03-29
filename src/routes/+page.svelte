@@ -37,7 +37,7 @@
 		background-position: center;
 	}
 	.container2 {
-		background-image: url('$lib/images/bg3.svg');
+		background-image: url('$lib/images/bg2.svg');
 		background-size: cover;
 
 		background-position: center;
