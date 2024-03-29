@@ -6,10 +6,10 @@
 	let show = true;
 </script>
 
-<div in:fade={{ delay: 3000 }}>
+<section class="">
 	<div class="container mx-auto max-w-screen-lg">
 		<div class="grid grid-cols-1 md:grid-cols-12">
-			<div class="space-y-4 md:col-span-6 p-4">
+			<div class="space-y-4 md:col-span-6 p-4 bg-surface-200">
 				<h1 class="text-3xl md:text-5xl font-bold">
 					Hi I am <Headeing />
 				</h1>
@@ -74,7 +74,7 @@
 			<img src={image} alt="design components" class="hidden md:block md:col-span-6" />
 		</div>
 	</div>
-</div>
+</section>
 
 <style>
 	.list-items li {

@@ -14,15 +14,24 @@
 	};
 </script>
 
-<section>
+<section class=" container1">
 	<Hero />
-</section>
-<section class="bg-secondary-300">
-	<HolderTfl />
-	<hr class="!border-t-8 !border-double" />
+	<section class="bg-secondary-300">
+		<HolderTfl />
+		<hr class="!border-t-8 !border-double" />
 
-	<HolderFram />
+		<HolderFram />
+	</section>
+	<Srvevce />
+	<Holder />
+	<Contactme />
 </section>
-<Srvevce />
-<Holder />
-<Contactme />
+
+<style>
+	.container1 {
+		background-image: url('$lib/images/bg3.svg');
+		background-size: cover;
+
+		background-position: center;
+	}
+</style>

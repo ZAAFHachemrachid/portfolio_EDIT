@@ -24,6 +24,3 @@
 		<div class="w-full sm:w-1/2 p-4 bg-surface-200"><WeBapp /></div>
 	</div>
 </section>
-
-<style>
-</style>
