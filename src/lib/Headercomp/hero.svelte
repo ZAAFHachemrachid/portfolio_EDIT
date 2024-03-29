@@ -15,8 +15,7 @@
 				</h1>
 				<p class="max-w-xl opacity-60">
 					Welcome to my protfolio , I am a computer science student at the University of Science and
-					Technology Houari Boumediene, I am passionate about backend development and Low level
-					programming.
+					Ahmed Draia, I am passionate about backend development and Low level programming.
 				</p>
 				<ul class="list-items">
 					<li>
@@ -27,8 +26,8 @@
 							/></span
 						>
 						<span>
-							<b>Rust Svelte based</b> – build safe applications, no runtime errors, no undefined is
-							not a function ,and thay are fast
+							<b>Safe apps</b> – For my projects, I use Rust, which is a safe language that prevents
+							in backend and for frontend i use Svelte with TS. For safe and fast web apps
 						</span>
 					</li>
 					<li>
@@ -39,8 +38,9 @@
 							/></span
 						>
 						<span>
-							<b>Free and open source</b> – all packages have MIT license, you can use Mantine in any
-							project
+							<b> Specailized </b> – I am specialized in backend development and low level programming,
+							I have worked on many projects that have helped me to learn more about these fields, Full
+							API with Axum and i Built my own Kernel
 						</span>
 					</li>
 					<li>
