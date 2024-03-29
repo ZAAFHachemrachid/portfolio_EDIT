@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	import image from '../lib/op.jpg';
+	import image from '$lib/images/op.jpg';
 	import Icon from '@iconify/svelte';
-	import Headeing from './headeing.svelte';
+	import Headeing from '$lib/Headercomp/headeing.svelte';
 	let show = true;
 </script>
 

@@ -4,8 +4,10 @@
 	let displayText = '';
 	let isDarkMode = false;
 
-	// Function to start the typing animation
-	const startTyping = () => {
+	onMount(() => {
+		// Check if the document has the 'dark' class
+		isDarkMode = document.documentElement.classList.contains('dark');
+
 		let i = 0;
 		const type = () => {
 			if (i < text.length) {
@@ -28,18 +30,7 @@
 		};
 		// Start the typing animation
 		type();
-	};
-
-	onMount(() => {
-		// Check if the document has the 'dark' class
-		isDarkMode = document.documentElement.classList.contains('dark');
-		startTyping();
 	});
-
-	// Watch for changes in isDarkMode and restart the typing animation
-	$: if (isDarkMode) {
-		startTyping();
-	}
 </script>
 
 {#if isDarkMode}
