@@ -17,8 +17,10 @@
 <section>
 	<Hero />
 </section>
-<section>
+<section class="bg-secondary-300">
 	<HolderTfl />
+	<hr class="!border-t-8 !border-double" />
+
 	<HolderFram />
 </section>
 <Srvevce />
