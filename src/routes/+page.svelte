@@ -16,19 +16,27 @@
 
 <section class=" container1">
 	<Hero />
-	<section class="bg-secondary-300">
-		<HolderTfl />
-		<hr class="!border-t-8 !border-double" />
-
-		<HolderFram />
-	</section>
-	<Srvevce />
-	<Holder />
-	<Contactme />
 </section>
+<section class="bg-secondary-300">
+	<HolderTfl />
+	<hr class="!border-t-8 !border-double" />
+
+	<HolderFram />
+</section>
+<section class=" container2">
+	<Srvevce />
+</section>
+<Holder />
+<Contactme />
 
 <style>
 	.container1 {
+		background-image: url('$lib/images/bg3.svg');
+		background-size: cover;
+
+		background-position: center;
+	}
+	.container2 {
 		background-image: url('$lib/images/bg3.svg');
 		background-size: cover;
 
