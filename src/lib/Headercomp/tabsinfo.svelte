@@ -29,7 +29,7 @@
 		const options: TabsOptions = {
 			defaultTabId: 'settings',
 			activeClasses:
-				'hover:text-blue-600 variant-primary border-b-2 border-primary dark:text-blue-300 dark:border-blue-300 dark:hover:text-blue-200',
+				'hover:text-tertiary-900 border-b-2 border-primary dark:text-tertiary-300 dark:border-tertiary-300 dark:hover:text-tertiary-200',
 			inactiveClasses:
 				'text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300',
 			onShow: () => {
@@ -76,7 +76,7 @@
 		</li>
 		<li class="me-2" role="presentation">
 			<button
-				class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+				class="inline-block p-4 border-b-2 rounded-t-lg hover:text-black-700 hover:border-gray-300 dark:hover:text-gray-300"
 				id="dashboard-tab"
 				data-tabs-target="#dashboard"
 				type="button"
@@ -89,7 +89,7 @@
 		</li>
 		<li class="me-2" role="presentation">
 			<button
-				class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+				class="inline-block p-4 border-b-2 rounded-t-lg hover:text-black-700 hover:border-gray-300 dark:hover:text-gray-300"
 				id="settings-tab"
 				data-tabs-target="#settings"
 				type="button"
@@ -107,10 +107,10 @@
 		role="tabpanel"
 		aria-labelledby="profile-tab"
 	>
-		<p class="text-sm text-gray-500 dark:text-gray-400">
-			<strong class="font-medium text-gray-800 dark:text-white">Safe apps</strong>. For my projects,
-			I use Rust, which is a safe language that prevents in backend and for frontend i use Svelte
-			with TS. For safe and fast web apps
+		<p class="text-sm text-gray-800 dark:text-gray-400">
+			<strong class="font-semibold text-primary-900 dark:text-white">Safe apps :</strong> For my projects,
+			I use Rust, which is a safe language that prevents in backend and for frontend i use Svelte with
+			TS. For safe and fast web apps
 		</p>
 	</div>
 	<div
@@ -119,11 +119,10 @@
 		role="tabpanel"
 		aria-labelledby="dashboard-tab"
 	>
-		<p class="text-sm text-black-500 dark:text-gray-400">
-			<strong class="font-medium text-gray-800 dark:text-white">Specailized</strong>. I am
-			specialized in backend development and low level programming, I have worked on many projects
-			that have helped me to learn more about these fields, Full API with Axum and i Built my own
-			Kernel
+		<p class="text-sm text-gray-800 dark:text-gray-400">
+			<strong class="font-semibold text-primary-900 dark:text-white">Specailized :</strong> I am specialized
+			in backend development and low level programming, I have worked on many projects that have helped
+			me to learn more about these fields, Full API with Axum and i Built my own Kernel
 		</p>
 	</div>
 	<div
@@ -132,8 +131,8 @@
 		role="tabpanel"
 		aria-labelledby="settings-tab"
 	>
-		<p class="text-sm text-gray-500 dark:text-gray-400">
-			<strong class="font-medium text-gray-800 dark:text-white">Current</strong>. I am currently
+		<p class="text-sm text-gray-800 dark:text-gray-400">
+			<strong class="font-semibold text-primary-900 dark:text-white">Current :</strong> I am currently
 			working on a project that will help me to learn more about Kerrel development
 		</p>
 	</div>
