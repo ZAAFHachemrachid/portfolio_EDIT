@@ -7,6 +7,7 @@
 	import HolderFram from '$lib/TFL/HolderFRAM.svelte';
 	import Headeing from '$lib/Headercomp/headeing.svelte';
 	import { fade } from 'svelte/transition';
+	import Sava from '$lib/sava.svelte';
 
 	const theme = {
 		mode: 'light'
@@ -19,7 +20,7 @@
 </section>
 <section class="bg-secondary-300">
 	<HolderTfl />
-	<hr class="!border-t-8 !border-double" />
+	<hr class=" w-64 h-1 mx-auto my-4 bg-primary-400 border-0 rounded md:my-10" />
 
 	<HolderFram />
 </section>
@@ -28,6 +29,7 @@
 </section>
 <Holder />
 <Contactme />
+<Sava />
 
 <style>
 	.container1 {

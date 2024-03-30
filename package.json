@@ -43,6 +43,10 @@
   "type": "module",
   "dependencies": {
     "@floating-ui/dom": "^1.6.3",
+    "@popperjs/core": "^2.11.8",
+    "flowbite": "^2.3.0",
+    "flowbite-svelte": "^0.44.24",
+    "tailwind-merge": "^2.2.2",
     "typeit": "^8.8.3"
   }
 }

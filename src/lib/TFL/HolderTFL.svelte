@@ -58,7 +58,7 @@
 </script>
 
 <section class="bg-secondary-300">
-	<div class="container mx-auto max-w-screen-lg mt-4">
+	<div class="container mx-auto max-w-screen-lg py-8">
 		<h2
 			class="h2 font-bold gradient-heading"
 			id="Language"
