@@ -29,7 +29,6 @@
 </section>
 <Holder />
 <Contactme />
-<Sava />
 
 <style>
 	.container1 {
