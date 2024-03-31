@@ -38,7 +38,7 @@
 				<div class="text-xl md:text-3xl font-bold gradient-heading" id="Services">
 					<h3 class="h2">Services :</h3>
 				</div>
-				<p class="max-w-xl opacity-60 mx-auto bg-surface-200">
+				<p class="max-w-xl opacity-60 mx-auto bg-surface-200 p-2">
 					What i am cabable of doing, I have worked on many projects and i have a good experience in
 					backend development and low level programming and desktop apps.
 				</p>

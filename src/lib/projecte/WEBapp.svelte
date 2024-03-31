@@ -12,7 +12,7 @@
 	};
 </script>
 
-<div class="card w-80 mx-auto variant-filled-secondary">
+<div class="card w-80 mx-auto variant-glass-secondary">
 	<header class="card-header"><img src={image} alt="API" class="" /></header>
 
 	<section class="p-4 space-y-6">
