@@ -25,6 +25,7 @@
 			programming language to build the kernel. And wiki.osdev.org is my main reference.
 		</div>
 	</div>
+
 	<!-- <hr /> -->
 	<footer class="p-4 border-t border-surface-300-600-token">
 		<div class="flex justify-center">

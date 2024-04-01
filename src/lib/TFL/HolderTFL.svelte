@@ -58,7 +58,7 @@
 </script>
 
 <section class="bg-secondary-300">
-	<div class="container mx-auto max-w-screen-lg py-8">
+	<div class="container mx-auto max-w-screen-lg py-2">
 		<h2
 			class="h2 font-bold gradient-heading"
 			id="Language"
@@ -70,9 +70,9 @@
 			class=" font-bold"
 			style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 10vh;"
 		>
-			<p><li>This is what i learn and how i rate myself</li></p>
+			<p class="p-2"><li>This is what i learn and how i rate myself</li></p>
 			<p></p>
-			<p><li>For more info Click button to show you road map</li></p>
+			<p class="p-2"><li>For more info Click button to show you road map</li></p>
 		</div>
 		<div class="flex flex-wrap">
 			{#each description as item}

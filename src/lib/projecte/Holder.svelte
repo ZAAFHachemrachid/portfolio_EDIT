@@ -5,10 +5,10 @@
 	import WeBapp from './WEBapp.svelte';
 </script>
 
-<section class=" bg-surface-200">
+<section class=" bg-secondary-300">
 	<div class="container mx-auto max-w-screen-lg">
 		<div
-			class=" bg-surface-200 justify-center"
+			class=" bg-secondary-300 justify-center"
 			style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 10vh;"
 		>
 			<h1 class="h1 font-bold gradient-heading" id="Projects">Projects</h1>
@@ -18,9 +18,9 @@
 		</div>
 	</div>
 	<div class="flex flex-wrap">
-		<div class="w-full sm:w-1/2 p-4 bg-surface-200"><Apip /></div>
-		<div class="w-full sm:w-1/2 p-4 bg-surface-200"><Kernel /></div>
-		<div class="w-full sm:w-1/2 p-4 bg-surface-200"><Guiapp /></div>
-		<div class="w-full sm:w-1/2 p-4 bg-surface-200"><WeBapp /></div>
+		<div class="w-full sm:w-1/2 p-4 bg-secondary-300"><Apip /></div>
+		<div class="w-full sm:w-1/2 p-4 bg-secondary-300"><Kernel /></div>
+		<div class="w-full sm:w-1/2 p-4 bg-secondary-300"><Guiapp /></div>
+		<div class="w-full sm:w-1/2 p-4 bg-secondary-300"><WeBapp /></div>
 	</div>
 </section>

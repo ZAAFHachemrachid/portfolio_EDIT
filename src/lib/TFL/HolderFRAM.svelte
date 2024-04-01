@@ -66,7 +66,7 @@
 </script>
 
 <section class="bg-secondary-300">
-	<div class="container mx-auto max-w-screen-lg mb-4">
+	<div class="container mx-auto max-w-screen-lg mb-4 py-2">
 		<div class="flex flex-wrap">
 			{#each description as item}
 				{#if item.title === 'Iced & EGUI' || item.title === 'Axum'}

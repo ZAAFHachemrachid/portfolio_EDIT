@@ -24,7 +24,7 @@
 
 	<HolderFram />
 </section>
-<section class=" container2">
+<section>
 	<Srvevce />
 </section>
 <Holder />
