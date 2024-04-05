@@ -7,6 +7,7 @@
 	import HolderTfl from '$lib/TFL/HolderTFL.svelte';
 	import HolderFram from '$lib/TFL/HolderFRAM.svelte';
 	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 	let mounted = false;
 
 	onMount(() => {
@@ -14,8 +15,11 @@
 	});
 </script>
 
-<section class=" container1">
-	<Hero />
+<section class=" container1" >
+	<div transition:fade={{ duration: 400 }}>
+		<Hero />
+	</div>
+	
 </section>
 <section class="bg-secondary-300">
 	<HolderTfl />

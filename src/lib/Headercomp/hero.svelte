@@ -8,7 +8,7 @@
 </script>
 
 <section>
-	<div class="container mx-auto max-w-screen-lg" transition:fade={{ duration: 400 }}>
+	<div class="container mx-auto max-w-screen-lg" >
 		<div class="grid grid-cols-1 md:grid-cols-12">
 			<div class="space-y-4 md:col-span-6 p-4 bg-surface-200">
 				<h1 class="text-3xl md:text-5xl font-bold">
