@@ -1,18 +1,17 @@
 <script lang="ts">
+	import AnimatedElement from './../lib/AnimatedElement.svelte';
 	import Hero from '$lib/Headercomp/hero.svelte';
 	import Srvevce from '$lib/srvevce.svelte';
 	import Holder from '$lib/projecte/Holder.svelte';
 	import Contactme from '$lib/contactme.svelte';
 	import HolderTfl from '$lib/TFL/HolderTFL.svelte';
 	import HolderFram from '$lib/TFL/HolderFRAM.svelte';
-	import Headeing from '$lib/Headercomp/headeing.svelte';
-	import { fade } from 'svelte/transition';
-	import Sava from '$lib/sava.svelte';
+	import { onMount } from 'svelte';
+	let mounted = false;
 
-	const theme = {
-		mode: 'light'
-		// Add other theme properties here
-	};
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <section class=" container1">
@@ -27,8 +26,8 @@
 <section>
 	<Srvevce />
 </section>
-<Holder />
-<Contactme />
+<section><Holder /></section>
+<section><Contactme /></section>
 
 <style>
 	.container1 {
@@ -37,10 +36,12 @@
 
 		background-position: center;
 	}
-	.container2 {
-		background-image: url('$lib/images/bg2.svg');
-		background-size: cover;
+	.fade-in {
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
 
-		background-position: center;
+	.fade-in.mounted {
+		opacity: 1;
 	}
 </style>

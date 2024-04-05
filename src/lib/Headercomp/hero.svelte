@@ -7,8 +7,8 @@
 	let show = true;
 </script>
 
-<section class="">
-	<div class="container mx-auto max-w-screen-lg">
+<section>
+	<div class="container mx-auto max-w-screen-lg" transition:fade={{ duration: 400 }}>
 		<div class="grid grid-cols-1 md:grid-cols-12">
 			<div class="space-y-4 md:col-span-6 p-4 bg-surface-200">
 				<h1 class="text-3xl md:text-5xl font-bold">
@@ -39,10 +39,3 @@
 	</div>
 </section>
 
-<style>
-	.list-items li {
-		display: flex;
-		gap: 16px;
-		padding: 12px 0px;
-	}
-</style>

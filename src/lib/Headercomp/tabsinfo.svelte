@@ -3,6 +3,7 @@
 	import type { TabsOptions, TabsInterface, TabItem } from 'flowbite';
 	import type { InstanceOptions } from 'flowbite';
 	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 	onMount(() => {
 		const tabsElement: HTMLElement = document.getElementById('tabs')!;
 
@@ -55,6 +56,7 @@
 		tabs.show('contacts');
 	});
 </script>
+<section transition:fade={{ duration: 400 }}>
 
 <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
 	<ul
@@ -137,3 +139,4 @@
 		</p>
 	</div>
 </div>
+</section>
